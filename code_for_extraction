@@ -24,8 +24,6 @@ fsa_raw$right <- str_trunc(fsa_raw$y, 1, "left", ellipsis = "")
 
 #only keep the ones where the middle character is number
 #and only the ones where the last character is a letter
-#record Id being NA was added so that I can join it
-#with another table easily 
 fsa_raw <- fsa_raw %>% 
   filter(middle == "0" |
          middle == "1" |
